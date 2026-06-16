@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 83, in script
+    t "For the store’s holiday sale, it takes an additional 20% off of all furniture."
+TypeError: %o format: a number is required, not TagQuotingDict
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 83, in script
+    t "For the store’s holiday sale, it takes an additional 20% off of all furniture."
+  File "/space/Downloads/renpy-7.0.0-sdk/renpy/ast.py", line 694, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/space/Downloads/renpy-7.0.0-sdk/renpy/exports.py", line 1311, in say
+    what = what % tag_quoting_dict
+TypeError: %o format: a number is required, not TagQuotingDict
+
+Linux-4.15.0-45-generic-x86_64-with-debian-stretch-sid
+Ren'Py 7.2.2.491
+Instructional Design Example with Renpy 1.0
+Fri Jun  7 22:54:50 2019
